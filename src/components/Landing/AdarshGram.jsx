@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { MapPin, CheckCircle, Info } from 'lucide-react';
+import { MapPin, CircleCheck as CheckCircle, Info } from 'lucide-react';
 
 const AdarshGram = () => {
   const [selectedState, setSelectedState] = useState(null);
