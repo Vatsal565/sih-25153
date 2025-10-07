@@ -6,10 +6,12 @@ import SuccessStories from '@/components/Landing/SuccessStories';
 import Convergence from '@/components/Landing/Convergence';
 import Helpdesk from '@/components/Landing/Helpdesk';
 import Footer from '@/components/Landing/Footer';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
     <>
+      <Navbar/>
       <Hero />
       <KeyStats />
       <OfficialDocuments />
