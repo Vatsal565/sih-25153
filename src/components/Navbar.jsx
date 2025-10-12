@@ -9,36 +9,17 @@ export default function Navbar() {
   const navItems = [
     { name: 'Home', href: '/' },
     {
-      name: 'About',
-      href: '/about',
+      name: 'Dashboards',
+      href: '#',
       dropdown: [
-        { name: 'Overview', href: '/about/overview' },
-        { name: 'Objectives', href: '/about/objectives' },
-        { name: 'Mission & Vision', href: '/about/mission' },
-      ]
-    },
-    {
-      name: 'Schemes',
-      href: '/schemes',
-      dropdown: [
-        { name: 'Poverty Alleviation', href: '/schemes/poverty' },
-        { name: 'Adarsh Gram', href: '/schemes/adarsh-gram' },
-        { name: 'Infrastructure Development', href: '/schemes/infrastructure' },
-        { name: 'Skill Development', href: '/schemes/skill' },
-      ]
-    },
-    { name: 'Beneficiaries', href: '/beneficiaries' },
-    {
-      name: 'Resources',
-      href: '/resources',
-      dropdown: [
-        { name: 'Guidelines', href: '/resources/guidelines' },
-        { name: 'Documents', href: '/resources/documents' },
-        { name: 'Reports', href: '/resources/reports' },
-      ]
+        { name: 'Central Dashboard', href: '/central/dashboard' },
+        { name: 'State Dashboard', href: '/state/dashboard' },
+        { name: 'Agency Dashboard', href: '/agency/dashboard' },
+      ],
     },
     { name: 'Contact', href: '/contact' },
   ];
+
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -73,7 +54,7 @@ export default function Navbar() {
                     <ChevronDown className={`w-4 h-4 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`} />
                   )}
                 </a>
-                
+
                 {/* Dropdown Menu */}
                 {item.dropdown && activeDropdown === item.name && (
                   <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2">
@@ -130,7 +111,7 @@ export default function Navbar() {
                     )}
                   </div>
                 </a>
-                
+
                 {/* Mobile Dropdown */}
                 {item.dropdown && activeDropdown === item.name && (
                   <div className="ml-4 mt-2 space-y-1">
