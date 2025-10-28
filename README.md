@@ -1,38 +1,128 @@
-# PSYSIX
+# 🏛️ PSYSIX — A Unified Digital Command Center for Transparent Governance and Welfare Scheme Management
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🎯 Problem Statement
+**SIH25153 - Mapping of Implementing and Executing Agencies across PM-AJAY Components**
 
-## Getting Started
+Managing the **Pradhan Mantri Anusuchit Jaati Abhyuday Yojana (PM-AJAY)** involves multiple ministries, states, and executing agencies.  
+The existing system faces critical challenges:
+- ❌ Unclear roles and responsibilities  
+- 🕒 Delayed fund flow and disbursement  
+- 🔁 Scattered communication channels  
+- 📉 Lack of unified monitoring and tracking  
 
-First, run the development server:
+---
 
+## 💡 Our Solution
+**PSYSIX** is a **centralized platform** connecting the Centre, States, and Executing Agencies under one transparent ecosystem — enabling **real-time monitoring**, **accountability**, and **seamless coordination**.
+
+---
+
+## ✨ Key Features
+- 💰 **Real-time Fund Tracking** – Complete digital audit trail from allocation to utilization  
+- 🧭 **Role Mapping** – Clear accountability across all governance levels  
+- 🗺️ **Geo-tagged Progress Monitoring** – Evidence-based tracking with photo/document uploads  
+- 📊 **Role-based Dashboards** – Customized views for Central, State, and Agency levels  
+- ⚡ **Kafka-based Notifications** – Real-time alerts and updates  
+- ☁️ **Cloud-native Architecture** – Scalable microservices on Kubernetes  
+
+---
+
+## 🧠 Tech Stack
+
+### 🧩 Current (Prototype)
+- **Frontend:** Next.js, React  
+
+### 🏗️ Full Implementation
+| Layer | Technology |
+|:------|:------------|
+| **Frontend** | Next.js |
+| **Backend** | Spring Boot |
+| **Message Queue** | Apache Kafka |
+| **Database** | PostgreSQL |
+| **Cache** | Redis |
+| **Storage** | AWS S3 |
+| **Monitoring** | ELK Stack (Elasticsearch, Logstash, Kibana) |
+| **Containerization** | Docker |
+| **Orchestration** | Kubernetes |
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+Ensure you have the following installed:
+- **Node.js 18+**
+- **npm / yarn / pnpm / bun**
+
+### ⚙️ Installation
 ```bash
+# Clone the repository
+git clone <repository-url>
+cd psysix
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Project Structure
+The application consists of three main dashboard views:
 
-## Learn More
+| Path | Description |
+|:-----|:-------------|
+| `/central/dashboard` | Central Government monitoring and control |
+| `/state/dashboard` | State-level implementation tracking |
+| `/agency/dashboard` | Executing agency operations and reporting |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Impact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🏢 For Government
+- Complete visibility across all PM-AJAY components  
+- Faster, data-driven policymaking  
+- Real-time monitoring and intervention  
 
-## Deploy on Vercel
+### ⚙️ For Agencies
+- Streamlined fund flow and approvals  
+- Clear communication channels  
+- Reduced administrative overhead  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👥 For Citizens
+- Faster delivery of welfare projects  
+- Improved transparency and trust in governance  
+- Better accountability mechanisms  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🔗 Links
+- 🌐 **Live Prototype:** [https://sih-25153.vercel.app/](https://sih-25153.vercel.app/)  
+- 🧾 **Problem Statement:** SIH25153  
+
+---
+
+## 👥 Team
+**PSYSIX - SVNIT Surat**
+
+---
+
+## 🏆 Challenge Details
+- **Theme:** Smart Automation  
+- **Category:** Software  
+- **Event:** Smart India Hackathon 2025  
+
+---
+
+## 📌 Vision
+> To build a transparent, accountable, and data-driven governance platform that ensures every rupee reaches its intended beneficiary — transforming how welfare schemes are monitored and implemented across India.
+
+---
+
+> 🧱 **Note:** This is currently a basic Next.js prototype.  
+> The full production version will implement the complete **microservices architecture** with a **Spring Boot backend**, **Kafka messaging**, and **cloud-native deployment** on **Kubernetes**.
