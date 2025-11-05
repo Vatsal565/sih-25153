@@ -30,7 +30,7 @@ The existing system faces critical challenges:
 ## 🧠 Tech Stack
 
 ### 🧩 Current (Prototype)
-- **Frontend:** Next.js, React  
+- **Frontend:** Next.js 15, React  
 
 ### 🏗️ Full Implementation
 | Layer | Technology |
